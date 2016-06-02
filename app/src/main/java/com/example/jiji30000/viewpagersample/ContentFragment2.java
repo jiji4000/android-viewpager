@@ -8,8 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-public class PageFragment2 extends Fragment {
-    private static final String TAG = PageFragment2.class.getName();
+public class ContentFragment2 extends Fragment {
+    private final static String TAG = ContentFragment2.class.getName();
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,7 +19,21 @@ public class PageFragment2 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         Log.d(TAG, "onCreateView");
-        View view = inflater.inflate(R.layout.fragment_fragment_page, container, false);
+        View view = inflater.inflate(R.layout.content_fragment_page, container, false);
+        TextView textView = (TextView)view.findViewById(R.id.text);
+        textView.setText("サンプル2");
         return view;
+    }
+
+    @Override
+    public void onStop(){
+        Log.d(TAG,"onStop");
+        super.onStop();
+    }
+
+    @Override
+    public void onDetach(){
+        Log.d(TAG,"onDetach");
+        super.onDetach();
     }
 }

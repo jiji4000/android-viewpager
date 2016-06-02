@@ -2,11 +2,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.rakuishi.fragment.fragment.SampleFragment">
+    tools:context="com.example.jiji30000.viewpagersample.FragmentPage">
 
     <TextView
+        android:id="@+id/text"
+        android:text="fragment1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello World2" />
-
+        android:layout_height="wrap_content"
+        />
 </FrameLayout>

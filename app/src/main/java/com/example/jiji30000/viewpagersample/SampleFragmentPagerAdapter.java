@@ -6,8 +6,8 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 public class SampleFragmentPagerAdapter extends FragmentPagerAdapter {
-    final int PAGE_COUNT = 3;
-    private String tabTitles[] = new String[]{"Tab1", "Tab2", "Tab3"};
+    final int PAGE_COUNT = 2;
+    private String tabTitles[] = new String[]{"Tab1", "Tab2"};
     private Context context;
 
     public SampleFragmentPagerAdapter(FragmentManager fm, Context context) {
@@ -25,11 +25,9 @@ public class SampleFragmentPagerAdapter extends FragmentPagerAdapter {
         // fragmentを切り替える
         switch(position){
             case 0:
-                return new PageFragment();
+                return new ContentFragment1();
             case 1:
-                return new PageFragment2();
-            case 2:
-                return new PageFragment3();
+                return new ContentFragment2();
         }
         return null;
     }
