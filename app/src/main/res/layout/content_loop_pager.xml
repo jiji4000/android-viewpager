@@ -4,10 +4,10 @@
     android:layout_height="match_parent"
     tools:context="com.example.jiji30000.viewpagersample.FragmentPage">
 
-    <ImageView
-        android:id="@+id/main_image"
+    <TextView
+        android:id="@+id/text"
+        android:text="fragment1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:scaleType="fitXY"
         />
 </FrameLayout>
