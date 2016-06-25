@@ -1,16 +1,11 @@
 package com.example.jiji30000.viewpagersample;
 
 import android.content.Context;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.*;
 import android.support.v4.view.PagerAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 public class SamplePagerAdapter extends PagerAdapter{
 
@@ -34,7 +29,7 @@ public class SamplePagerAdapter extends PagerAdapter{
 
     @Override
     public void destroyItem(ViewGroup collection, int position, Object view) {
-        //ViewPagerに登録していたTextViewを削除する
+        //ViewPagerに登録していたViewを削除する
         collection.removeView((View)view);
     }
     @Override
